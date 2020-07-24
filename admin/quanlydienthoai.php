@@ -2,12 +2,13 @@
 <?php
 include_once("../DataProvide_PDO.php");
 $result = DataProvider_PDO::ExecuteQuery("SELECT * FROM dienthoai");
-echo "<table border='1' style='margin-left:370px'>
+echo "<table border='1' style='margin-left:370px;width: 1002px;'>
     <tr>
         <th>Mã điện thoại</th>
         <th>Mã loại</th>
         <th>Tên điện thoại</th>
         <th>Giá bán</th>
+        <th>Mô tả</th>
         <th>Hình</th>
     </tr>";
     while($dt=$result->fetch(PDO::FETCH_ASSOC)){
@@ -61,14 +62,5 @@ echo "<table border='1' style='margin-left:370px'>
   </head>
 <!-- logo-->
 <body>
-        <div  style="font-family: tahoma"; font-size: 20px; color:green;>
-            <form action="#" methhod="POST" > 
-                 <input  type="text" name="txtSearch" placeholder="Tên sản phẩm cần tìm..." style="width: 308px; height: 36px;"/>
-                 <input type="submit" name="btnSearch" value="Search" style="height:36px"/>
-             </form>
-             <?php
-                    echo $output;
-             ?>
-        </div>
 </body>
 </html>

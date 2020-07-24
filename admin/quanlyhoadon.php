@@ -2,7 +2,7 @@
 <?php
 include_once("../DataProvide_PDO.php");
 $result = DataProvider_PDO::ExecuteQuery("SELECT * FROM hoadon");
-echo "<table border='1' style='margin-left:250px'>
+echo "<table border='1' style='margin-left:250px;width: 1002px;height: 502px;'>
     <tr>
         <th>Mã hóa đơn</th>
         <th>Ngày đặt</th>
